@@ -58,7 +58,7 @@
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
                 <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#cartModal">
-                  Carrito (<span id="cart-count">0</span>)
+                  <img src="{% static 'tienda/img/carrito_1.png' %}" > (<span id="cart-count">0</span>)
                 </button>
               </li>
             </ul>
@@ -198,8 +198,8 @@
               <div class="col-12">
 
                 <div class="d-grid gap-2 col-6 mx-auto">
-                  <button class="btn btn-success focus-ring  text-decoration-none border rounded-2"
-                    style="--bs-focus-ring-color: rgba(var(--bs-success-rgb), .25)" " type="
+                  <button class="btn btn-success focus-ring text-decoration-none border rounded-2"
+                    style="--bs-focus-ring-color: rgba(var(--bs-success-rgb), .25)"  type="
                     submit">Registrarse</button>
                   <!-- decoracion del booton en la clase -->
                 </div>
@@ -261,73 +261,70 @@
       <br>
       <h1 class="text-center"> Accesorios </h1>
 
-      <div class="container mb-5 mt-3">
-        <div class="row justify-content-center">
-          <div class="col-lg-4 col-md-6 mb-5">
-            <div class="card mx-auto" style="width: 18rem;">
-              <img src="Copia de img/b_azul.avif" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Bandana Color Azul</h5>
-                <p class="Precio card-text">Precio: $5.990</p>
-                <a href="#" class="btn btn-success">Añadir al carrito</a>
-              </div>
-            </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="{% static 'tienda/img/b_azul.avif' %}" class="card-img-top" alt="Producto 1">
+          <div class="card-body">
+            <h5 class="card-title">Bandana Azul</h5>
+            <p class="card-text">$6.990</p>
+            <button class="btn btn-success add-to-cart" data-name="Bandana Azul" data-price="6.990" data-image="{% static 'tienda/img/b_azul.avif' %}">Agregar al Carrito</button>
           </div>
-
-          <div class="col-lg-4 col-md-6 mb-5">
-            <div class="card mx-auto" style="width: 18rem;">
-              <img src="Copia de img/b_roja.avif" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Bandana Color Rojo</h5>
-                <p class="Precio card-text">Precio: $5.990</p>
-                <a href="#" class="btn btn-success">Añadir al carrito</a>
-              </div>
-            </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="{% static 'tienda/img/b_roja.avif' %}" class="card-img-top" alt="Producto 2">
+          <div class="card-body">
+            <h5 class="card-title">Bandana Roja</h5>
+            <p class="card-text">$6.990</p>
+            <button class="btn btn-success add-to-cart" data-name="Bandana Roja" data-price="6.990" data-image="{% static 'tienda/img/b_roja.avif' %}">Agregar al Carrito</button>
           </div>
-
-          <div class="col-lg-4 col-md-6 mb-5">
-            <div class="card mx-auto" style="width: 18rem;">
-              <img src="Copia de img/b_rosa.avif" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Bandana Color Rosa</h5>
-                <p class="Precio card-text">Precio: $5.990</p>
-                <a href="#" class="btn btn-success">Añadir al carrito</a>
-              </div>
-            </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="{% static 'tienda/img/b_rosa.avif' %}" class="card-img-top" alt="Producto 3">
+          <div class="card-body">
+            <h5 class="card-title">Bandana Rosa </h5>
+            <p class="card-text">$6.990</p>
+            <button class="btn btn-success add-to-cart" data-name="Bandana Rosa" data-price="6.990" data-image="{% static 'tienda/img/b_rosa.avif' %}">Agregar al Carrito</button>
           </div>
-
-          <div class="col-lg-4 col-md-6 mb-5">
-            <div class="card mx-auto" style="width: 18rem;">
-              <img src="Copia de img/c_azul.webp" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Collar Color Azul</h5>
-                <p class="Precio card-text">Precio: $7.990</p>
-                <a href="#" class="btn btn-success">Añadir al carrito</a>
-              </div>
-            </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="{% static 'tienda/img/c_azul.webp' %}" class="card-img-top" alt="Producto 3">
+          <div class="card-body">
+            <h5 class="card-title">Collar Azul</h5>
+            <p class="card-text">$4.990</p>
+            <button class="btn btn-success add-to-cart" data-name="Collar Azul" data-price="4.990" data-image="{% static 'tienda/img/c_azul.webp' %}">Agregar al Carrito</button>
           </div>
-
-          <div class="col-lg-4 col-md-6 mb-5">
-            <div class="card mx-auto" style="width: 18rem;">
-              <img src="Copia de img/c_roja.webp" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Collar Color Rojo</h5>
-                <p class="Precio card-text">Precio: $7.990</p>
-                <a href="#" class="btn btn-success">Añadir al carrito</a>
-              </div>
-            </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="{% static 'tienda/img/c_roja.webp' %}" class="card-img-top" alt="Producto 3">
+          <div class="card-body">
+            <h5 class="card-title">Collar Rojo</h5>
+            <p class="card-text">$4.990</p>
+            <button class="btn btn-success add-to-cart" data-name="Collar Rojo" data-price="4.990" data-image="{% static 'tienda/img/c_roja.webp' %}">Agregar al Carrito</button>
           </div>
-
-          <div class="col-lg-4 col-md-6 mb-5">
-            <div class="card mx-auto" style="width: 18rem;">
-              <img src="Copia de img/c_rosa.webp" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Collar Color Rosa</h5>
-                <p class="Precio card-text">Precio: $7.990</p>
-                <a href="#" class="btn btn-success">Añadir al carrito</a>
-              </div>
-            </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="{% static 'tienda/img/c_rosa.webp' %}" class="card-img-top" alt="Producto 3">
+          <div class="card-body">
+            <h5 class="card-title">Collar Rosa</h5>
+            <p class="card-text">$4.990</p>
+            <button class="btn btn-success add-to-cart" data-name="Collar Rosa" data-price="4.990" data-image="{% static 'tienda/img/c_rosa.webp' %}">Agregar al Carrito</button>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
         </div>
       </div>
     </div>
@@ -341,62 +338,71 @@
 
     <h2> Pedigree </h2>
 
-    <div class="product-content" id="lista-1">
+<div class="container mt-5">
+    <div class="row">
 
-      <div class="product">
-        <img src="Copia de img/producto_1.avif" alt="">
-        <div class="product-txt">
-          <h3>producto</h3>
-          <p class="Precio">$22.990</p>
-          <a href="#" class="agregar-carrito btn-2" data-id="1"> Agregar </a>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="{% static 'tienda/img/producto_1.avif' %}" class="card-img-top" alt="Producto 7">
+          <div class="card-body">
+            <h5 class="card-title">Pack Individual Pequeño</h5>
+            <p class="card-text">$12.990</p>
+            <button class="btn btn-success add-to-cart" data-name="Pack Individual Pequeño" data-price="12.990" data-image="{% static 'tienda/img/producto_1.avif' %}">Agregar al Carrito</button>
+          </div>
         </div>
       </div>
-
-      <div class="product">
-        <img src="Copia de img/producto_2.avif" alt="">
-        <div class="product-txt">
-          <h3>producto</h3>
-          <p class="Precio">$17.990</p>
-          <a href="#" class="agregar-carrito btn-2" data-id="2"> Agregar </a>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="{% static 'tienda/img/producto_2.avif' %}" class="card-img-top" alt="Producto 8">
+          <div class="card-body">
+            <h5 class="card-title">Bolsa 3KG</h5>
+            <p class="card-text">$15.990</p>
+            <button class="btn btn-success add-to-cart" data-name="Bolsa 3KG" data-price="15.990" data-image="{% static 'tienda/img/producto_2.avif' %}">Agregar al Carrito</button>
+          </div>
         </div>
       </div>
-
-      <div class="product">
-        <img src="Copia de img/producto_3.avif" alt="">
-        <div class="product-txt">
-          <h3>producto</h3>
-          <p class="Precio">$12.990</p>
-          <a href="#" class="agregar-carrito btn-2" data-id="3"> Agregar </a>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="{% static 'tienda/img/producto_3.avif' %}" class="card-img-top" alt="Producto 9">
+          <div class="card-body">
+            <h5 class="card-title">Pack Individual Grande</h5>
+            <p class="card-text">$13.990 </p>
+            <button class="btn btn-success add-to-cart" data-name="Pack Individual Grande" data-price="13.990" data-image="{% static 'tienda/img/producto_3.avif' %}">Agregar al Carrito</button>
+          </div>
         </div>
       </div>
-
-      <div class="product">
-        <img src="Copia de img/producto_4.avif" alt="">
-        <div class="product-txt">
-          <h3>producto</h3>
-          <p class="Precio">$21.990</p>
-          <a href="#" class="agregar-carrito btn-2" data-id="4"> Agregar </a>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="{% static 'tienda/img/producto_4.avif' %}" class="card-img-top" alt="Producto 10">
+          <div class="card-body">
+            <h5 class="card-title">Pack Familiar</h5>
+            <p class="card-text">$30.990</p>
+            <button class="btn btn-success add-to-cart" data-name="Pack Familiar" data-price="30.990" data-image="{% static 'tienda/img/producto_4.avif' %}">Agregar al Carrito</button>
+          </div>
         </div>
       </div>
-
-      <div class="product">
-        <img src="Copia de img/producto_5.png" alt="">
-        <div class="product-txt">
-          <h3>producto</h3>
-          <p class="Precio">$8.990</p>
-          <a href="#" class="agregar-carrito btn-2" data-id="5"> Agregar </a>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="{% static 'tienda/img/producto_5.png' %}" class="card-img-top" alt="Producto 11">
+          <div class="card-body">
+            <h5 class="card-title">DentaStix</h5>
+            <p class="card-text">$30.00</p>
+            <button class="btn btn-success add-to-cart" data-name="DentaStix" data-price="6.990" data-image="{% static 'tienda/img/producto_5.png' %}">Agregar al Carrito</button>
+          </div>
         </div>
       </div>
-
-      <div class="product">
-        <img src="Copia de img/producto_6.avif" alt="">
-        <div class="product-txt">
-          <h3>producto</h3>
-          <p class="Precio">$7.990</p>
-          <a href="#" class="agregar-carrito btn-2" data-id="6"> Agregar </a>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="{% static 'tienda/img/producto_6.avif' %}" class="card-img-top" alt="Producto 12">
+          <div class="card-body">
+            <h5 class="card-title">Premios </h5>
+            <p class="card-text">$2.490</p>
+            <button class="btn btn-success add-to-cart" data-name="Premios" data-price="2.490" data-image="{% static 'tienda/img/producto_6.avif' %}">Agregar al Carrito</button>
+          </div>
         </div>
       </div>
-
+    </div>
+  </div>
     </div>
 
 
@@ -413,10 +419,10 @@
     <div id="carouselExample" class="carousel slide custom-carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="Copia de img/1.png" class="d-block w-100" alt="...">
+          <img src="{% static 'tienda/img/1.png' %}" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="Copia de img/2.png" class="d-block w-100" alt="...">
+          <img src="{% static 'tienda/img/2.png' %}" class="d-block w-100" alt="...">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -440,61 +446,61 @@
     <div class="row">
       <div class="col-md-4">
         <div class="card">
-          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Producto 1">
+          <img src="{% static 'tienda/img/M_1.webp' %}" class="card-img-top" alt="Producto 1">
           <div class="card-body">
-            <h5 class="card-title">Producto 1</h5>
-            <p class="card-text">$10.00</p>
-            <button class="btn btn-success add-to-cart" data-name="Producto 1" data-price="10.00" data-image="https://via.placeholder.com/150">Agregar al Carrito</button>
+            <h5 class="card-title">Premium Adulto</h5>
+            <p class="card-text">$15.990</p>
+            <button class="btn btn-success add-to-cart" data-name="Premium Adulto" data-price="15.990" data-image="{% static 'tienda/img/M_1.webp' %}">Agregar al Carrito</button>
           </div>
         </div>
       </div>
       <div class="col-md-4">
         <div class="card">
-          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Producto 2">
+          <img src="{% static 'tienda/img/M_2.png' %}" class="card-img-top" alt="Producto 2">
           <div class="card-body">
-            <h5 class="card-title">Producto 2</h5>
-            <p class="card-text">$20.00</p>
-            <button class="btn btn-success add-to-cart" data-name="Producto 2" data-price="20.00" data-image="https://via.placeholder.com/150">Agregar al Carrito</button>
+            <h5 class="card-title">Galletas Adulto</h5>
+            <p class="card-text">$2.990</p>
+            <button class="btn btn-success add-to-cart" data-name="Galletas Adulto" data-price="2.990" data-image="{% static 'tienda/img/M_2.png' %}">Agregar al Carrito</button>
           </div>
         </div>
       </div>
       <div class="col-md-4">
         <div class="card">
-          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Producto 3">
+          <img src="{% static 'tienda/img/M_3.png' %}" class="card-img-top" alt="Producto 3">
           <div class="card-body">
-            <h5 class="card-title">Producto 3</h5>
-            <p class="card-text">$30.00</p>
-            <button class="btn btn-success add-to-cart" data-name="Producto 3" data-price="30.00" data-image="https://via.placeholder.com/150">Agregar al Carrito</button>
+            <h5 class="card-title">Premium Cachorro</h5>
+            <p class="card-text">$12.990</p>
+            <button class="btn btn-success add-to-cart" data-name="Premium Cachorro" data-price="12.990" data-image="{% static 'tienda/img/M_3.png' %}">Agregar al Carrito</button>
           </div>
         </div>
       </div>
       <div class="col-md-4">
         <div class="card">
-          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Producto 3">
+          <img src="{% static 'tienda/img/M_4.jpg' %}" class="card-img-top" alt="Producto 3">
           <div class="card-body">
-            <h5 class="card-title">Producto 3</h5>
-            <p class="card-text">$30.00</p>
-            <button class="btn btn-success add-to-cart" data-name="Producto 3" data-price="30.00" data-image="https://via.placeholder.com/150">Agregar al Carrito</button>
+            <h5 class="card-title">Salsa Adulto Pequeño</h5>
+            <p class="card-text">$1.090</p>
+            <button class="btn btn-success add-to-cart" data-name="Salsa Adulto Pequeño" data-price="1.090" data-image="{% static 'tienda/img/M_4.jpg' %}">Agregar al Carrito</button>
           </div>
         </div>
       </div>
       <div class="col-md-4">
         <div class="card">
-          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Producto 3">
+          <img src="{% static 'tienda/img/M_5.jpg' %}" class="card-img-top" alt="Producto 3">
           <div class="card-body">
-            <h5 class="card-title">Producto 3</h5>
-            <p class="card-text">$30.00</p>
-            <button class="btn btn-success add-to-cart" data-name="Producto 3" data-price="30.00" data-image="https://via.placeholder.com/150">Agregar al Carrito</button>
+            <h5 class="card-title">Salsa Adulto</h5>
+            <p class="card-text">$1.090</p>
+            <button class="btn btn-success add-to-cart" data-name="Salsa Adulto" data-price="1.090" data-image="{% static 'tienda/img/M_5.jpg' %}">Agregar al Carrito</button>
           </div>
         </div>
       </div>
       <div class="col-md-4">
         <div class="card">
-          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Producto 3">
+          <img src="{% static 'tienda/img/M_6.png' %}" class="card-img-top" alt="Producto 3">
           <div class="card-body">
-            <h5 class="card-title">Producto 3</h5>
-            <p class="card-text">$30.00</p>
-            <button class="btn btn-success add-to-cart" data-name="Producto 3" data-price="30.00" data-image="https://via.placeholder.com/150">Agregar al Carrito</button>
+            <h5 class="card-title">Galletas Fit</h5>
+            <p class="card-text">$3.990</p>
+            <button class="btn btn-success add-to-cart" data-name="Galletas Fit" data-price="3.990" data-image="{% static 'tienda/img/M_6.png' %}">Agregar al Carrito</button>
           </div>
         </div>
       </div>
@@ -527,7 +533,7 @@
     </div>
     <div class="row w-75 mx-auto servicio-fila">
       <div class="col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap">
-        <img class="border border-4 rounded" src="Copia de img/sasha_1.webp" alt="pizza" width="700" height="180">
+        <img class="border border-4 rounded" src="{% static 'tienda/img/sasha_1.webp' %}" alt="pizza" width="700" height="180">
         <div>
           <h3 class="fs-5 mt-4 px-4 pb-1">Sasha</h3>
           <p class="px-4">
@@ -537,7 +543,7 @@
       </div>
 
       <div class="col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap">
-        <img class="border border-4 rounded" src="Copia de img/toddy_2.jpeg" alt="pizza" width="180" height="180">
+        <img class="border border-4 rounded" src="{% static 'tienda/img/toddy_2.jpeg' %}" alt="pizza" width="180" height="180">
         <div>
           <h3 class="fs-5 mt-4 px-4 pb-1">Toddy</h3>
           <p class="px-4">
@@ -551,7 +557,7 @@
 
     <div class="row w-75 mx-auto servicio-fila">
       <div class="col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap">
-        <img class="border border-4 rounded" src="Copia de img/perro_3.jpeg" alt="pizza" width="180" height="160">
+        <img class="border border-4 rounded" src="{% static 'tienda/img/perro_3.jpeg' %}" alt="pizza" width="180" height="160">
         <div>
           <h3 class="fs-5 mt-4 px-4 pb-1">Rey</h3>
           <p class="px-4">La historia de Rey es un testimonio del poder transformador del amor y la adopción.
@@ -561,7 +567,7 @@
       </div>
 
       <div class="col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap">
-        <img class="border border-4 rounded" src="Copia de img/perro_4.jpeg" alt="pizza" width="180" height="160">
+        <img class="border border-4 rounded" src="{% static 'tienda/img/perro_4.jpeg' %}" alt="pizza" width="180" height="160">
         <div>
           <h3 class="fs-5 mt-4 px-4 pb-1">Negra</h3>
           <p class="px-4">
@@ -591,7 +597,7 @@
       </p>
     </div>
     <div class="mt-5 text-center">
-      <img class="img-fluid mb-5 border border-4 rounded-circle" " src=" Copia de img/foto_t1.jpeg" alt="equipo"
+      <img class="img-fluid mb-5 border border-4 rounded-circle"  src="{% static 'tienda/img/foto_t1.jpeg' %}" alt="equipo"
         width="300" height="300">
     </div>
 
@@ -632,7 +638,7 @@
   <div class="toast-container position-fixed bottom-0 end-0 p-3">
     <div id="Oreja" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
       <div class="toast-header bg-success">
-        <img src="Copia de img/logo.png" class="rounded me-2" alt="Placeholder" width="30px">
+        <img src="{% static 'tienda/img/logo.png' %}" class="rounded me-2" alt="Placeholder" width="30px">
         <strong class="me-auto text-dark">Good<span class="text-light">Guy</span></strong>
         <small class="text-light">Justo ahora</small>
         <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>

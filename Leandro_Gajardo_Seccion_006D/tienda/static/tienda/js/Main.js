@@ -61,58 +61,58 @@ $(document).ready(function(){
 
 //carrito no termina de funcionar
 document.addEventListener('DOMContentLoaded', function() {
-      let cart = [];
-      const cartItemsContainer = document.getElementById('cart-items');
-      const cartCount = document.getElementById('cart-count');
+  let cart = [];
+  const cartItemsContainer = document.getElementById('cart-items');
+  const cartCount = document.getElementById('cart-count');
 
-      document.querySelectorAll('.add-to-cart').forEach(button => {
-        button.addEventListener('click', function() {
+  document.querySelectorAll('.add-to-cart').forEach(button => {
+      button.addEventListener('click', function() {
           const name = this.getAttribute('data-name');
           const price = this.getAttribute('data-price');
           const image = this.getAttribute('data-image');
 
           cart.push({ name, price, image });
           updateCart();
-        });
       });
+  });
 
-      function updateCart() {
-        cartItemsContainer.innerHTML = '';
-        cart.forEach((item, index) => {
-          const listItem = document.createElement('li');
-          listItem.classList.add('list-group-item');
-          listItem.innerHTML = `
+  function updateCart() {
+    cartItemsContainer.innerHTML = '';
+    cart.forEach((item, index) => {
+        const listItem = document.createElement('li');
+        listItem.classList.add('list-group-item');
+        listItem.innerHTML = `
             <div class="d-flex justify-content-between align-items-center">
-              <img src="${item.image}" alt="${item.name}" width="50" class="me-2">
-              <span>${item.name}</span>
-              <span class="badge bg-primary rounded-pill">$${item.price}</span>
-              <button class="btn btn-danger btn-sm ms-2 remove-from-cart" data-index="${index}">Eliminar</button>
+                <img src="${imageURL(item.image)}" alt="${item.name}" width="50" class="me-2">
+                <span>${item.name}</span>
+                <span class="badge bg-primary rounded-pill">$${item.price}</span>
+                <button class="btn btn-danger btn-sm ms-2 remove-from-cart" data-index="${index}">Eliminar</button>
             </div>
-          `;
-          cartItemsContainer.appendChild(listItem);
-        });
+        `;
+        cartItemsContainer.appendChild(listItem);
+    });
 
-        if (cart.length === 0) {
-          cartItemsContainer.innerHTML = '<li class="list-group-item">Tu carrito está vacío.</li>';
-        }
+    if (cart.length === 0) {
+        cartItemsContainer.innerHTML = '<li class="list-group-item">Tu carrito está vacío.</li>';
+    }
 
-        cartCount.innerText = cart.length;
+    cartCount.innerText = cart.length;
 
-        document.querySelectorAll('.remove-from-cart').forEach(button => {
-          button.addEventListener('click', function() {
+    document.querySelectorAll('.remove-from-cart').forEach(button => {
+        button.addEventListener('click', function() {
             const index = this.getAttribute('data-index');
             cart.splice(index, 1);
             updateCart();
-          });
         });
-      }
     });
+}
 
+// Función para obtener la URL completa de la imagen estática en Django
+function imageURL(imagePath) {
+    return `${window.location.origin}${imagePath}`;
+}
+});
 
-
-
-
-//carrito no termina de funcionar
 
 function mostrarNotificacion() {
     var toast = document.getElementById('Oreja');
