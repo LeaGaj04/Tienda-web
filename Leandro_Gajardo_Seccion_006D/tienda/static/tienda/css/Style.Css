@@ -114,9 +114,11 @@ th, td{
     max-width: 100%; /* Ajusta el porcentaje según tus necesidades */
     margin: 0 auto; /* Centra el carrusel horizontalmente */
 }
+
 .custom-carousel .carousel-item {
     height: 200px; /* Ajusta la altura según tus necesidades */
 }
+
 .custom-carousel .carousel-item img {
     height: 80%; /* Hace que las imágenes llenen el contenedor */
     object-fit: 100%; /* Ajusta la imagen para que cubra el contenedor */
